@@ -1,0 +1,22 @@
+Símbolos terminales: +, -, *, /, (, ), id, num, $
+Símbolos no terminales: E, T, F
+
+FIRST (F):
+  First(E) = { (, id, num }
+  First(T) = { (, id, num }
+  First(F) = { (, id, num }
+
+FOLLOW (S):
+  Follow(E) = { ), $ }
+  Follow(T) = { +, -, ), $ }
+  Follow(F) = { *, /, +, -, ), $ }
+
+PRODUCCIONES (P):
+  E → E + T
+  E → E - T
+  E → T
+  T → T * F
+  T → T / F
+  T → F
+  F → ( E )
+  F → id

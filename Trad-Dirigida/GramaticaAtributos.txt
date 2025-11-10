@@ -1,0 +1,12 @@
+Gramática de atributos (como en el PDF, Ejemplo 1, pág. 4–5):
+
+REGLA                  | ACCIÓN SEMÁNTICA
+-----------------------|----------------------------------------
+E → E₁ + T            | E.trad := "suma(" + E₁.trad + ", " + T.trad + ")"
+E → E₁ - T            | E.trad := "res(" + E₁.trad + ", " + T.trad + ")"
+E → T                 | E.trad := T.trad
+T → T₁ * F            | T.trad := "mul(" + T₁.trad + ", " + F.trad + ")"
+T → T₁ / F            | T.trad := "div(" + T₁.trad + ", " + F.trad + ")"
+T → F                 | T.trad := F.trad
+F → ( E )             | F.trad := E.trad
+F → id                | F.trad := id.lexema

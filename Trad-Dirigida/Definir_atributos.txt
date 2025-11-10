@@ -1,0 +1,10 @@
+Atributos utilizados (como en el PDF):
+
+- Atributos sintetizados:
+    • E.trad, T.trad, F.trad → cadena con traducción en notación prefija (ej. "suma(a, mul(4, b))")
+    • id.lexema → nombre del identificador
+    • num.lexema → valor numérico como cadena
+
+Ejemplo del PDF:
+  F → id { F.trad = id.lexema }
+  T → T * F { T.trad = "mul(" + T₁.trad + ", " + F.trad + ")" }

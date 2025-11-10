@@ -1,0 +1,17 @@
+En expresiones aritméticas puras no hay declaraciones, pero la tabla de símbolos se define como:
+
+Estructura de cada entrada:
+- Nombre: cadena (ej. "a")
+- Tipo: "entero", "real", etc.
+- Dirección: offset en memoria
+
+Ejemplo (si se usara en otro contexto):
+
++--------+--------+-----------+
+| Nombre | Tipo   | Dirección |
++--------+--------+-----------+
+| a      | entero | 0         |
+| b      | real   | 4         |
++--------+--------+-----------+
+
+Según el PDF (pág. 15), la tabla se usa durante el procesamiento de declaraciones,
