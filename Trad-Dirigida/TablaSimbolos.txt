@@ -15,3 +15,4 @@ Ejemplo (si se usara en otro contexto):
 +--------+--------+-----------+
 
 Según el PDF (pág. 15), la tabla se usa durante el procesamiento de declaraciones,
+pero en este ETDS no se llena porque solo hay expresiones.
