@@ -1,4 +1,4 @@
-Gramática con recursividad izquierda (como en el PDF, pág. 27–28):
+Gramática con recursividad izquierda (como en la presentación 08):
 
 E → E + T
 E → E - T
@@ -12,4 +12,4 @@ F → num
 
 Esta gramática respeta:
 - Asociatividad izquierda de +, -, *, /
-- Precedencia: * y / > + y -
+- Precedencia: * y / tienen mayor precedencia que + y -
