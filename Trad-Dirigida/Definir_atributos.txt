@@ -1,7 +1,8 @@
-Atributos utilizados (como en el PDF):
+Atributos utilizados 
 
-- Atributos sintetizados:
-    • E.trad, T.trad, F.trad → cadena con traducción en notación prefija (ej. "suma(a, mul(4, b))")
+- Atributos sintetizados (se calculan de los hijos hacia el padre):
+    • E.trad, T.trad, F.trad → cadena con traducción en notación prefija
+        Ej: "suma(a, mul(4, b))"
     • id.lexema → nombre del identificador
     • num.lexema → valor numérico como cadena
 
