@@ -1,6 +1,6 @@
 Ejemplo de AST decorado para: a + b * c
 
-Árbol con atributos (como en el PDF, pág. 28):
+Representación del árbol con atributos 
 
 E
 ├─ E₁ → trad = "a"
@@ -13,4 +13,4 @@ E
 Resultado final:
 E.trad = "suma(a, mul(b, c))"
 
-Este AST se genera mediante el ETDS y se imprime como traducción.
+Este AST se genera mediante el ETDS y se imprime como resultado de la traducción.
