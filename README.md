@@ -77,6 +77,20 @@ Cada archivo corresponde a un ítem del enunciado de la tarea:
    ETDS final con acciones semánticas en el lugar correcto (págs. 28–29).
 
 ---
+```bash
+Carpeta codigo/ (implementación como respaldo)
+- traductor.py: implementación en Python de un analizador descendente recursivo (ASDR) que:
+  - Usa la gramática transformada sin recursividad izquierda (pág. 29 del PDF)
+  - Genera e imprime un AST decorado con formato visual claro (├──, └──)
+  - Construye y muestra una tabla de símbolos con los identificadores encontrados
+  - Ejemplo de salida:
+    └── suma
+        ├── a
+        └── mul
+            ├── b
+            └── c
+```
+Nota: La gramática transformada se usa solo internamente en el código, tal como recomienda el PDF (págs. 29–31). La entrega teórica se basa en la gramática original con recursividad izquierda.
 
 ---
 
